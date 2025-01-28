@@ -132,5 +132,6 @@ To address this, use the `-reduces_faces` option along with `-surface_num`, whic
 
 `Remaining Faces = Watertight Mesh Faces * surface_num`
 
--`Typically, setting surface_num between `0.05` and `0.1` yields good results.`
--`For example, `-surface_num 0.1` retains 10% of the watertight mesh’s faces.`
+-Typically, setting surface_num between `0.05` and `0.1` yields good results.
+
+-For example, `-surface_num 0.1` retains 10% of the watertight mesh’s faces.
