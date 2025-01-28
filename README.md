@@ -129,4 +129,8 @@ For most use cases, it is recommended to set:
 #### 2.Handling Non-Watertight Meshes:
 The program automatically detects whether the input mesh is watertight. If the mesh is not watertight, it will automatically reconstruct the mesh to make it watertight. However, this process may significantly increase the number of faces in the mesh, potentially to an unacceptable level.
 To address this, use the `-reduces_faces` option along with `-surface_num`, which controls the percentage of faces retained after reduction:
+
 `Remaining Faces = Watertight Mesh Faces * surface_num`
+
+-Typically, setting surface_num between `0.05` and `0.1` yields good results.
+-For example, `-surface_num 0.1` retains 10% of the watertight mesh’s faces.
