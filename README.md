@@ -54,3 +54,55 @@ cmake --build build
 ```
 For a debug build, add `-DCMAKE_BUILD_TYPE=Debug` and `-DENABLE_SANITIZER=ON` to the cmake step above.
 
+## Usage
+
+```console
+makeTreeMedial
+
+  -depth              Depth of the sphere-tree
+
+  -branch             Branching factor of sphere-tree
+
+  -numCover           Number of sample points to cover object with
+
+  -minCover           Minimum number of sample points per triangle
+
+  -initSpheres        Initial number of spheres in medial axis approx.
+
+  -minSpheres         Minimum number of spheres to create for each sub
+                          region of the medial axis approximation.
+
+  -erFact             Amount by which to reduce the error when refining
+                          the medial axis approximation.
+
+  -testerLevels       Controls the number of points to use to represent a
+                          sphere when evaluating fit.  Use -1 for CONVEX
+                          objects, 1 will generate 42 points and 2 will
+                          generate 168 points.
+
+  -optimise           Which optimisation algorithm to use, SIMPLEX just
+                          rearranges the spheres to try improve fit, BALANCE
+                          tries to throw away spheres that don't improve the
+                          approximation.
+
+  -maxOptLevel        Maximum level of the sphere-tree to apply the optimiser.
+                          0 does first set only - i.e. children of level 0.
+
+  -balExcess          The amount of extra error the BALANCE algorithm is
+                          allowed to introduce when throwing away error,
+                          e.g. 0.05 allows a 5 percent increase in the error.
+
+  -nopause            Don't pause when processing, i.e. batch mode
+
+  -eval               Evaluate the fit of the sphere-tree and append the info
+                          to the end of the output file.
+
+  -merge              algorithms
+  -expand
+
+
+  makeTreeMedial  -branch 8 -depth 1 -testerLevels 2 -numCover 10000
+                  -minCover 5 -initSpheres 1000 -minSpheres 200 -erFact 2
+                  -nopause -expand -merge bunny-1500.obj
+
+```
