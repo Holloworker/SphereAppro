@@ -118,6 +118,15 @@ In practical applications, only the following parameters are typically adjusted:
 - `-reduces_faces`
 - `-surface_num`
 
-The final number of spheres in the approximation is approximately:
+The final number of spheres in the approximation is:
 
 `Number of Spheres = branch^depth`
+
+For most use cases, it is recommended to set:
+- `-branch`: The desired number of spheres in the final approximation
+- `-depth`:1(single level)
+
+#### 2.Handling Non-Watertight Meshes:
+The program automatically detects whether the input mesh is watertight. If the mesh is not watertight, it will automatically reconstruct the mesh to make it watertight. However, this process may significantly increase the number of faces in the mesh, potentially to an unacceptable level.
+To address this, use the `-reduces_faces` option along with `-surface_num`, which controls the percentage of faces retained after reduction:
+`Remaining Faces = Watertight Mesh Faces * surface_num`
