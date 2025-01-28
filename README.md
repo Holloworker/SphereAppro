@@ -44,6 +44,10 @@ Use pip to install trimesh in your Python environment:
 pip install trimesh
 ```
 
+## Compile
+
+Before compiling, ensure the Python environment with trimesh is activated:
+
 ```console
 cmake -B build .
 cmake --build build
