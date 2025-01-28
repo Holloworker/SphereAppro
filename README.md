@@ -8,7 +8,12 @@ of polygonal models based on a fantastic work [SphereTree](https://github.com/ml
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ac2e3b6a-6a30-46d4-a211-f07bbb09a1dc" alt="Image 1" width="200">
-  <img src="https://github.com/user-attachments/assets/ac2e3b6a-6a30-46d4-a211-f07bbb09a1dc" alt="Image 2" width="200">
+  <img src="https://github.com/user-attachments/assets/5b851bf3-db31-4281-9beb-ee026f84ccf9" alt="Image 2" width="200">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0e5db557-0f87-439e-bb6c-e850fb81aec7" alt="Image 1" width="200">
+  <img src="https://github.com/user-attachments/assets/8ebe6235-737a-4058-9f7a-05f48c71b6b3" alt="Image 2" width="200">
 </p>
 
 ![7da420ac1eac65c0725d9e17112071d](https://github.com/user-attachments/assets/ac2e3b6a-6a30-46d4-a211-f07bbb09a1dc)
