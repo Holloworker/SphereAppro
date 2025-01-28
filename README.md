@@ -55,7 +55,7 @@ cmake --build build
 For a debug build, add `-DCMAKE_BUILD_TYPE=Debug` and `-DENABLE_SANITIZER=ON` to the cmake step above.
 
 ## Usage
-
+### Main Program:
 ~~~
 makeTreeMedial
 
