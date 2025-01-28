@@ -132,6 +132,12 @@ To address this, use the `-reduces_faces` option along with `-surface_num`, whic
 
 `Remaining Faces = Watertight Mesh Faces * surface_num`
 
--Typically, setting surface_num between `0.05` and `0.1` yields good results.
+Typically, setting surface_num between `0.05` and `0.1` yields good results. For example, `-surface_num 0.1` retains 10% of the watertight mesh’s faces.
 
--For example, `-surface_num 0.1` retains 10% of the watertight mesh’s faces.
+### Post-Processing:
+
+If you feel that there are redundant spheres in the generated approximation, you don't need to rerun the entire program. Instead, you can use the postprocess tool. The usage is as follows:
+~~~
+postprocess -inputfile <input.obj> -outputfile <output.obj> -targetspheres <number_of_spheres>
+~~~
+The `postprocess` tool runs very quickly, and in some cases, it can even produce higher-quality approximations compared to rerunning the full approximation process. This is especially true for compact approximations, where multiple spheres are positioned very close to each other with significant overlap. In such scenarios, `postprocess` optimizes the sphere arrangement effectively and reduces redundancy, resulting in a cleaner and more efficient representation
