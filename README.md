@@ -63,6 +63,8 @@ makeTreeMedial
 
   -branch             Branching factor of sphere-tree
 
+  -surface_num        The percent of the total surfaces left
+
   -numCover           Number of sample points to cover object with
 
   -minCover           Minimum number of sample points per triangle
@@ -93,6 +95,8 @@ makeTreeMedial
                           e.g. 0.05 allows a 5 percent increase in the error.
 
   -nopause            Don't pause when processing, i.e. batch mode
+
+  -reduces_faces      Reduce the faces of the original mesh
 
   -eval               Evaluate the fit of the sphere-tree and append the info
                           to the end of the output file.
