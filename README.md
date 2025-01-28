@@ -34,14 +34,15 @@ git clone --recurse-submodules <repository-url>
 cd <repository-folder>
 ```
 
-3. Python Environment with trimesh
+2. Python Environment with trimesh
 
 The program relies on trimesh for 3D mesh manipulation and processing. Ensure you have Python 3.8 or higher installed.
-Install trimesh:
 
 Use pip to install trimesh in your Python environment:
 
+```console
 pip install trimesh
+```
 
 ```console
 cmake -B build .
