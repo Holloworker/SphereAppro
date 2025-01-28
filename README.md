@@ -142,6 +142,4 @@ postprocess -inputfile <input.obj> -outputfile <output.obj> -targetspheres <numb
 ~~~
 The `postprocess` tool runs very quickly, and in some cases, it can even produce higher-quality approximations compared to rerunning the full approximation process. This is especially true for compact approximations, where multiple spheres are positioned very close to each other with significant overlap. In such scenarios, `postprocess` optimizes the sphere arrangement effectively and reduces redundancy, resulting in a cleaner and more efficient representation
 
-Note: If your desired number of target spheres differs significantly from the number of spheres in the current approximation (e.g., the difference is large), we recommend rerunning the program with new parameters instead of relying on postprocessing. This ensures the best quality and distribution of spheres.
-
-
+Note: If your desired number of target spheres differs significantly from the number of spheres in the current approximation (e.g., the difference is large), please rerun the program with new parameters instead of relying on postprocessing.
