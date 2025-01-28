@@ -7,7 +7,11 @@ This software is designed for the construction of sphere representations
 of polygonal models based on a fantastic work [SphereTree](https://github.com/mlund/spheretree.git)
 
 
-![1738041049016](https://github.com/user-attachments/assets/373d79ce-01ed-4908-931c-7c36be45f98c)
+![7da420ac1eac65c0725d9e17112071d](https://github.com/user-attachments/assets/ac2e3b6a-6a30-46d4-a211-f07bbb09a1dc)
+![c8b089f01f1e9466fadc90ba4705527](https://github.com/user-attachments/assets/8ebe6235-737a-4058-9f7a-05f48c71b6b3)
+![7da420ac1eac65c0725d9e17112071d](https://github.com/user-attachments/assets/f3cb9806-0b4b-49c5-a1e6-21882af371d7)
+![9fc3350814863b4c96dc2a3492099f4](https://github.com/user-attachments/assets/5b851bf3-db31-4281-9beb-ee026f84ccf9)
+
 
 
 
