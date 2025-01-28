@@ -114,3 +114,10 @@ makeTreeMedial
 #### 1.Key Parameters to Adjust：
 In practical applications, only the following parameters are typically adjusted:
 - `-branch`
+- `-depth`
+- `-reduces_faces`
+- `-surface_num`
+The final number of spheres in the approximation is approximately:
+$$
+Number\ of\ Spheres = branch^{depth}
+$$
