@@ -16,6 +16,11 @@ of polygonal models based on a fantastic work [SphereTree](https://github.com/ml
   <img src="https://github.com/user-attachments/assets/0e5db557-0f87-439e-bb6c-e850fb81aec7" alt="Image 2" width="200">
 </p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/28043498-e8e7-4fae-a09d-2caf87c24009" alt="Image 1" width="200">
+  <img src="https://github.com/user-attachments/assets/2ecf3c4d-2209-4e69-acbc-570510092a01" alt="Image 2" width="200">
+</p>
+
 
 
 
