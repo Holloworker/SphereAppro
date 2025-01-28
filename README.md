@@ -110,7 +110,7 @@ makeTreeMedial
                   -nopause -expand -merge bunny-1500.obj
 
 ~~~
-#### Important Notes：
-##### 1.Key Parameters to Adjust：
+### Important Notes：
+#### 1.Key Parameters to Adjust：
 In practical applications, only the following parameters are typically adjusted:
 - `-branch`
