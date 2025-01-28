@@ -30,10 +30,10 @@ Dependencies
 1. Integrated ManifoldPlus
 The program includes the integrated ManifoldPlus for processing and validating meshes. No additional setup is required, as it is already part of this repository. Make sure all submodules are correctly initialized and updated when cloning the repository:
 Clone the repository and initialize submodules
-'''console
+```console
 git clone --recurse-submodules <repository-url>
 cd <repository-folder>
-'''
+```
 
 3. Python Environment with trimesh
 
