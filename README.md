@@ -56,7 +56,7 @@ For a debug build, add `-DCMAKE_BUILD_TYPE=Debug` and `-DENABLE_SANITIZER=ON` to
 
 ## Usage
 
-```console
+~~~
 makeTreeMedial
 
   -depth              Depth of the sphere-tree
@@ -105,4 +105,4 @@ makeTreeMedial
                   -minCover 5 -initSpheres 1000 -minSpheres 200 -erFact 2
                   -nopause -expand -merge bunny-1500.obj
 
-```
+~~~
