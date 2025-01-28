@@ -23,7 +23,25 @@ of polygonal models based on a fantastic work [SphereTree](https://github.com/ml
 
 
 
+## Program Dependencies
 
+This program requires the following dependencies to be properly set up before compiling and running:
+Dependencies
+1. Integrated ManifoldPlus
+The program includes the integrated ManifoldPlus for processing and validating meshes. No additional setup is required, as it is already part of this repository. Make sure all submodules are correctly initialized and updated when cloning the repository:
+
+# Clone the repository and initialize submodules
+git clone --recurse-submodules <repository-url>
+cd <repository-folder>
+
+2. Python Environment with trimesh
+
+The program relies on trimesh for 3D mesh manipulation and processing. Ensure you have Python 3.8 or higher installed.
+Install trimesh:
+
+Use pip to install trimesh in your Python environment:
+
+pip install trimesh
 
 ```console
 cmake -B build .
