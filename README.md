@@ -141,3 +141,22 @@ If you feel that there are redundant spheres in the generated approximation, you
 postprocess -inputfile <input.obj> -outputfile <output.obj> -targetspheres <number_of_spheres>
 ~~~
 The `postprocess` tool runs very quickly, and in some cases, it can even produce higher-quality approximations compared to rerunning the full approximation process. This is especially true for compact approximations, where multiple spheres are positioned very close to each other with significant overlap. In such scenarios, `postprocess` optimizes the sphere arrangement effectively and reduces redundancy, resulting in a cleaner and more efficient representation
+![1738047086617](https://github.com/user-attachments/assets/a1710381-5b3a-4a36-8904-c4cafe757f1a)
+![1738047141825](https://github.com/user-attachments/assets/8145005d-c739-4251-a3a1-d0a18209f664)
+![1738047232264](https://github.com/user-attachments/assets/9c7b21cf-43ff-4316-a2ba-898545ea6484)
+<p align="center">
+  <span>
+    <img src="https://github.com/user-attachments/assets/a1710381-5b3a-4a36-8904-c4cafe757f1a" alt="Image 1" width="200"><br>
+    <i>Image 1: Description of the first image.</i>
+  </span>
+  <span style="margin-left: 20px;">
+    <img src="https://github.com/user-attachments/assets/8145005d-c739-4251-a3a1-d0a18209f664" alt="Image 2" width="200"><br>
+    <i>Image 2: Description of the second image.</i>
+  </span>
+    <span style="margin-left: 20px;">
+    <img src="https://github.com/user-attachments/assets/9c7b21cf-43ff-4316-a2ba-898545ea6484" alt="Image 3" width="200"><br>
+    <i>Image 3: Description of the second image.</i>
+  </span>
+</p>
+
+
