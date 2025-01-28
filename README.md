@@ -1,11 +1,5 @@
-[![Build](https://github.com/mlund/spheretree/actions/workflows/cmake-single-platform.yml/badge.svg)](https://github.com/mlund/spheretree/actions/workflows/cmake-single-platform.yml)
 
-# SPHERE TREE CONSTRUCTION TOOLKIT
-
-Copyright 2003 Image Synthesis Group, Trinity College Dublin, Ireland.
-All Rights Reserved.  Please read COPYRIGHT.TXT before using this software.
-
-
+# SPHERE APPROXIMATION
 
 ## INTRODUCTION
 
@@ -22,113 +16,6 @@ _Bradshaw G., Dept. of Computer Science, Trinity College Dublin, May 2002._
 
 This thesis, example animations and the latest version of this distributution can
 be found at: http://isg.cs.tcd.ie/spheretree
-
-## AUTHOR
-
-This software was written by Gareth Bradshaw as part of the above thesis.
-Any comments or queries can be directed to Gareth_Bradshaw@yahoo.co.uk.
-
-## ALGORITHMS
-
-The software implements the following algorithms:
-
-### Octree
- The Octree algorithm is the simplest and fastest algorithm for the
- construction of sphere-trees. The first step of the algorithm is to
- construct a bounding cube that surrounds the object. This cube is then
- divided into 8 sub-cubes by splitting it along the X, Y and Z axes. The
- sub-cubes that are contained within the object are further sub-divided to
- create a set of children nodes. This sub-division can continue to an
- arbitrary depth. The nodes of the octree are finally used to construct a
- sphere-tree by creating a sphere that contains each of the "solid" nodes,
- i.e. nodes that represent part of the object. Our implementation of this
- algorithm is capable of creating either a shell of the object or a solid
- representation. When constructing a solid object the algorithm doesn't need
- to sub-divide any nodes that are completely contained within the object as
- areas inside the object don't need to be refined.
-
-
-### Grid
- This algorithm is an extension to the Octree algorithm. Each set of
- children spheres is created by sub-dividing the parent node but the grid
- algorithm allows more freedom in the sub-division. Where the octree
- algorithm only ever produced a 2*2*2 division, the Grid algorithm can
- produce a grid of spheres with ANY dimensions as long as the number of
- spheres produced is within the specified maximum. The algorithm also
- optimises the orientation of the grid of spheres, and their size, so as to
- minimise the error in the approximation and to minimise the volume of each
- of the resulting regions.
-
-
-### Hubbard
- Hubbard uses an approximation of the object's medial axis to construct
- sphere-trees. The medial axis is approximated using a set of spheres which
- are then used to construct the sphere-tree. This algorithm often produces
- tight fitting sphere-trees, certainly tighter than the Octree algorithm.
-
-
-### Merge
- The merge algorithm is similar to the algorithm used by Hubbard. The set of
- spheres approximating the medial-axis is reduced down to the number
- required for the sphere-tree by successively merging pairs of spheres
- together. The merge algorithm uses the adaptive medial axis approximation
- algorithm to generate the initial set of spheres. It also considers the
- effects of merging pairs of spheres together that will actually improve
- regions of the approximation.
-
-
-### Burst
- The burst algorithm is another medial axis based algorithm. It aims to
- improve upon the merge algorithm by better distributing the error across
- the resulting set of spheres. The algorithm iteratively reduces the set of
- spheres by bursting (removing) a sphere and using the surrounding sphere to
- fill in the gaps. This algorithm is typically well suited to constructing
- the top levels of sphere-trees but may not perform so well for the lower
- levels.
-
-
-### Expand
- The expand algorithm takes a different approach to reducing the set of
- medial spheres. In order to reduce the worst error in the approximation,
- the algorithm tries to distribute the error evenly across the entire
- region. This is achieved by growing each of the spheres so that they all
- hang over the surface by the same amount and selecting a sub-set of the
- spheres that will cover the object. A search algorithm is needed to find
- the "stand-off distance" that will result in the desired number of spheres.
-
-### pawn
- The spawn algorithm aims to produce similar results as the expand
- algorithm. Each set of spheres is produced by creating a set of spheres
- that hang over the surface by the same amount, thus distributing the error
- evenly across the approximation. Instead of using the object's medial axis
- for the construction, a local optimisation algorithm is used to generate
- the set of spheres. For each sphere in the set, the optimisation algorithm
- chooses the location that covers the most object, hence keeping the set of
- spheres small. A search algorithm is again used to find the "stand-off"
- distance that yields the required number of spheres.
-
-
-### Combined
- The combined algorithm allows a number of different algorithms to be used
- in conjunction. For each set of spheres, the algorithm tries a number of
- the other algorithms and chooses the one that results in the lowest error.
- Any of the sphere reduction algorithms can be used in this algorithm, i.e.
- Grid, Merge, Burst, Expand and Spawn, however we typically only use Merge
- and Expand as these are usually produce the tightest approximations.
-
-## PROGRAMS
-
-There are a number of different programs in this distribution.  There is a
-Windows GUI based program that allows models to be viewed and sphere-trees to
-be constructed using the various algorithms.  It also allows experimentation
-with the medial axis approximation algorithms, which are used by many of the
-sphere-tree construction algorithms.  The distribution also contains a number
-of command line programs.  These implement the algorithms in the same way as
-the GUI but allow for batch processing should you want to construct numerous
-sphere-trees. The command line programs should also compile on any UNIX like
-operating system that supports the use of "configure" scripts.  See below for
-instructions on how to build the programs. The following command line programs
-are available:
 
 ~~~
 makeTreeMedial
