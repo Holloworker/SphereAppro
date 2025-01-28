@@ -29,12 +29,13 @@ This program requires the following dependencies to be properly set up before co
 Dependencies
 1. Integrated ManifoldPlus
 The program includes the integrated ManifoldPlus for processing and validating meshes. No additional setup is required, as it is already part of this repository. Make sure all submodules are correctly initialized and updated when cloning the repository:
-
-# Clone the repository and initialize submodules
+Clone the repository and initialize submodules
+'''console
 git clone --recurse-submodules <repository-url>
 cd <repository-folder>
+'''
 
-2. Python Environment with trimesh
+3. Python Environment with trimesh
 
 The program relies on trimesh for 3D mesh manipulation and processing. Ensure you have Python 3.8 or higher installed.
 Install trimesh:
