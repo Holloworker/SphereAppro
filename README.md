@@ -105,9 +105,9 @@ makeTreeMedial
   -expand
 
 
-  makeTreeMedial  -branch 8 -depth 1 -testerLevels 2 -numCover 10000
+  makeTreeMedial  -branch 8 -depth 1 -surface_num 0.05 -testerLevels 2 -numCover 10000
                   -minCover 5 -initSpheres 1000 -minSpheres 200 -erFact 2
-                  -nopause -expand -merge bunny-1500.obj
+                  -nopause -reduces_faces -expand -merge bunny-1500.obj
 
 ~~~
 ### Important Notes：
